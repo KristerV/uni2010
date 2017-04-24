@@ -1,0 +1,230 @@
+<html>
+<head>
+<title>Krister Viirsaar's Portfolio</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script type="text/javascript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function findurl() {
+       document.write(location.href);
+      }
+
+function addBookmark(title,url) {
+
+  var msg_netscape = "NetScape message";
+  var msg_opera    = "This function does not work with this version of Opera.  Please bookmark us manually.";
+  var msg_other    = "Your browser does not support automatic bookmarks.  Please bookmark us manually.";
+  var agt          = navigator.userAgent.toLowerCase();
+
+
+  if (agt.indexOf("opera") != -1) 
+  {
+    if (window.opera && window.print)
+    {
+      return true;
+    } else 
+    {
+      alert(msg_other);
+    }
+  }    
+  else if (agt.indexOf("firefox") != -1) window.sidebar.addPanel(title,url,"");
+  else if ((agt.indexOf("msie") != -1) && (parseInt(navigator.appVersion) >=4)) window.external.AddFavorite(url,title); 
+  else if (agt.indexOf("netscape") != -1) window.sidebar.addPanel(title,url,"")         
+  else if (window.sidebar && window.sidebar.addPanel) window.sidebar.addPanel(title,url,""); 
+  else alert(msg_other);
+}
+
+
+
+
+function MM_CheckFlashVersion(reqVerStr,msg){
+  with(navigator){
+    var isIE  = (appVersion.indexOf("MSIE") != -1 && userAgent.indexOf("Opera") == -1);
+    var isWin = (appVersion.toLowerCase().indexOf("win") != -1);
+    if (!isIE || !isWin){  
+      var flashVer = -1;
+      if (plugins && plugins.length > 0){
+        var desc = plugins["Shockwave Flash"] ? plugins["Shockwave Flash"].description : "";
+        desc = plugins["Shockwave Flash 2.0"] ? plugins["Shockwave Flash 2.0"].description : desc;
+        if (desc == "") flashVer = -1;
+        else{
+          var descArr = desc.split(" ");
+          var tempArrMajor = descArr[2].split(".");
+          var verMajor = tempArrMajor[0];
+          var tempArrMinor = (descArr[3] != "") ? descArr[3].split("r") : descArr[4].split("r");
+          var verMinor = (tempArrMinor[1] > 0) ? tempArrMinor[1] : 0;
+          flashVer =  parseFloat(verMajor + "." + verMinor);
+        }
+      }
+      // WebTV has Flash Player 4 or lower -- too low for video
+      else if (userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 4.0;
+
+      var verArr = reqVerStr.split(",");
+      var reqVer = parseFloat(verArr[0] + "." + verArr[2]);
+  
+      if (flashVer < reqVer){
+        if (confirm(msg))
+          window.location = "http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash";
+      }
+    }
+  } 
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+body {
+	background-image: url(images/background.jpg);
+	background-repeat: repeat-x;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+}
+a:link {
+	color: #FD11B1;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #6F0255;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+.style1 {
+	font-size: 42px;
+	color: #598200;
+	font-weight: bold;
+}
+.style2 {
+	font-size: 18px;
+	color: #598200;
+	font-weight: bold;
+}
+-->
+</style>
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/images/button_over_03.jpg','images/images/button_over_04.jpg','images/images/button_over_05.jpg','images/images/button_over_06.jpg','images/images/button_over_07.jpg','images/images/User_09.jpg');MM_CheckFlashVersion('8,0,0,0','Oh it seems your Flash player has retired. How about getting the new one?');">
+<!-- ImageReady Slices (site01.psd) -->
+<table width="779" height="990" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+<tr>
+		<td colspan="5">
+			<img src="images/index_01.jpg" width="779" height="85" alt=""></td>
+  </tr>
+	<tr>
+		<td rowspan="3">
+			<img src="images/index_02.jpg" width="165" height="240" alt=""></td>
+	  <td><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','images/images/button_over_03.jpg',1)"><img src="images/index_03.jpg" alt="home" name="Image13" width="196" height="83" border="0"></a></td>
+<td colspan="2"><a href="services.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','images/images/button_over_04.jpg',1)"><img src="images/index_04.jpg" alt="services" name="Image14" width="242" height="83" border="0"></a></td>
+<td><a href="contact.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','images/images/button_over_05.jpg',1)"><img src="images/index_05.jpg" alt="contact" name="Image15" width="176" height="83" border="0"></a></td>
+  </tr>
+	<tr>
+		<td colspan="2"><a href="architecture.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','images/images/button_over_06.jpg',1)"><img src="images/index_06.jpg" alt="architecture" name="Image16" width="370" height="77" border="0"></a></td>
+<td colspan="2"><a href="animation.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','images/images/button_over_07.jpg',1)"><img src="images/index_07.jpg" alt="animation" name="Image17" width="244" height="77" border="0"></a></td>
+  </tr>
+	<tr>
+		<td colspan="4"><img src="images/index_08.jpg" width="406" height="80"><a href="javascript:addBookmark('Krister Viirsaar - 3D Artist','http://3dimensionalanimation.com')" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/images/User_09.jpg',1)"><img src="images/User_09.jpg" alt="bookmark" name="Image18" width="208" height="80" border="0"></a></td>
+  </tr>
+	<tr>
+		<td height="663" colspan="5" background="images/index_09.jpg"><table width="730" height="2992" border="0" align="center">
+          <tr>
+            <td height="2988"><div align="center"><span class="style1">Animation</span></div>
+            
+              <p><span class="style2">Over Charged</span><br>
+                A team of 5 (+ the client) created this animation. I was proud to work with these people. They inspired me and they let me know when something could be better. For behind the scenes images and videos check out ourFacebook Group (http://www.facebook.com/group.php?gid=279802284373&amp;ref=ts).
+              <p align="center">
+              <object width="635" height="367"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=11541094&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=11541094&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="635" height="367"></embed></object><p><a href="http://vimeo.com/11541094">OverCharged - Short Animation</a> from <a href="http://vimeo.com/user3759545">Over Charged</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+              
+              
+              <p>Software Used: Maya, Mental ray, After Effects
+<p><span class="style2"><img src="images/divider.jpg" alt="divider" width="680" height="13"></span>
+<p><span class="style2">Animated Music Video (2010)</span>              <br>
+              Band: Kirtana Rasa<br>
+              Song: V&auml;ljam&otilde;eldud Maal            
+              <p>An individual project. The band is a group of proffessionals. I did everything from filming to compositing with help from the band, the University and my dad.
+              <p align="center">
+
+  <object width="623" height="359"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=9736255&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=9736255&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" width="623" height="359" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always"></embed></object> 
+<p><a href="http://vimeo.com/9736255">Kirtana Rasa - Väljamõeldud Maa (Music Video with subs)</a> from <a href="http://vimeo.com/user1382030">Krister Viirsaar</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+</p> Software used: Maya, Mental ray, After Effects, Premier
+<p><span class="style2"><img src="images/divider.jpg" alt="divider" width="680" height="13"></span>
+<p><span class="style2">The Steadfast Tin Soldier (2009)</span>
+              <p>My second eved character animation. Every time I finish one piece I feel I could do so much better than that already. Modeling, texturing, rigging, rendering all done by myself. That is a lot of work and some bits in here are very sluggish.
+              <p align="center">
+                <object width="504" height="403">
+                  <param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=4456282&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=4456282&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="504" height="403"></embed>
+                </object>
+              <p align="left">Software used: Maya with Mental Ray
+
+</p>
+  <p align="center" class="style2"><img src="images/divider.jpg" alt="divider" width="680" height="13"></p>
+  <p align="left" class="style2">Aliens Invade Bradford (2009)</p>
+  <p align="left">The aim of this project was to practice special effects: composing 3D animation onto filmed footage. The assignment was simple (make a UFO destroy a human), but  strict, so it looks a bit cheesy, but those were the requirements.</p>
+  <div align="center">
+<div id="player2">
+
+<p align="center">
+  <object width="640" height="368">
+    <param name="allowfullscreen" value="true" />
+    <param name="allowscriptaccess" value="always" />
+    <param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=4696584&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" />
+    <embed src="http://vimeo.com/moogaloop.swf?clip_id=4696584&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="368"></embed>
+  </object>
+  <br>
+  </p>
+<p align="left">Software used: Maya with Mental Ray, After Effects  </p>
+<p>
+  <img src="images/divider.jpg" alt="divider" width="680" height="13"></span></p>
+<p align="left"><span class="style2">Newspaper character animation (2009)</span></p>
+<p align="left">Here's a test animation made for a proposed commercial.</p>
+<p align="center">
+  <object width="500" height="380">
+    <param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=6064362&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=6064362&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" width="500" height="380" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always"></embed></object> 
+    </p>
+  <div align="left">Software used: Maya  </div>
+  &nbsp;</p>
+  <p>&nbsp;</p></td>
+          </tr>
+      </table></td>
+  </tr>
+	<tr>
+		<td height="2">
+			<img src="images/spacer.gif" width="165" height="1" alt=""></td>
+  <td>
+			<img src="images/spacer.gif" width="196" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="174" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="68" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="176" height="1" alt=""></td>
+	</tr>
+</table>
+<!-- End ImageReady Slices -->
+</body>
+</html>

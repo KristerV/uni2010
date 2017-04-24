@@ -1,0 +1,148 @@
+<html>
+<head>
+<title>Krister Viirsaar's Portfolio</title>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" >
+<script type="text/javascript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function findurl() {
+       document.write(location.href);
+      }
+
+function addBookmark(title,url) {
+
+  var msg_netscape = "NetScape message";
+  var msg_opera    = "This function does not work with this version of Opera.  Please bookmark us manually.";
+  var msg_other    = "Your browser does not support automatic bookmarks.  Please bookmark us manually.";
+  var agt          = navigator.userAgent.toLowerCase();
+
+
+  if (agt.indexOf("opera") != -1) 
+  {
+    if (window.opera && window.print)
+    {
+      return true;
+    } else 
+    {
+      alert(msg_other);
+    }
+  }    
+  else if (agt.indexOf("firefox") != -1) window.sidebar.addPanel(title,url,"");
+  else if ((agt.indexOf("msie") != -1) && (parseInt(navigator.appVersion) >=4)) window.external.AddFavorite(url,title); 
+  else if (agt.indexOf("netscape") != -1) window.sidebar.addPanel(title,url,"")         
+  else if (window.sidebar && window.sidebar.addPanel) window.sidebar.addPanel(title,url,""); 
+  else alert(msg_other);
+}
+
+
+
+//-->
+</script>
+<style type="text/css">
+<!--
+body {
+	background-image: url(images/background.jpg);
+	background-repeat: repeat-x;
+}
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+}
+a:link {
+	color: #93007C;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #360129;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+.style1 {
+	font-size: 42px;
+	font-weight: bold;
+	color: #598200;
+}
+.style2 {
+	color: #598200;
+	font-weight: bold;
+	font-size: 18px;
+}
+-->
+</style></head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/images/button_over_03.jpg','images/images/button_over_04.jpg','images/images/button_over_05.jpg','images/images/button_over_06.jpg','images/images/button_over_07.jpg','images/images/User_09.jpg')">
+<!-- ImageReady Slices (site01.psd) -->
+<table width="779" height="1036" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+<tr>
+		<td colspan="5">
+			<img src="images/index_01.jpg" width="779" height="85" alt=""></td>
+  </tr>
+	<tr>
+		<td rowspan="3">
+			<img src="images/index_02.jpg" width="165" height="240" alt=""></td>
+	  <td><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','images/images/button_over_03.jpg',1)"><img src="images/index_03.jpg" alt="home" name="Image13" width="196" height="83" border="0"></a></td>
+<td colspan="2"><a href="services.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','images/images/button_over_04.jpg',1)"><img src="images/index_04.jpg" alt="services" name="Image14" width="242" height="83" border="0"></a></td>
+<td><a href="contact.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','images/images/button_over_05.jpg',1)"><img src="images/index_05.jpg" alt="contact" name="Image15" width="176" height="83" border="0"></a></td>
+  </tr>
+	<tr>
+		<td colspan="2"><a href="architecture.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','images/images/button_over_06.jpg',1)"><img src="images/index_06.jpg" alt="architecture" name="Image16" width="370" height="77" border="0"></a></td>
+<td colspan="2"><a href="animation.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','images/images/button_over_07.jpg',1)"><img src="images/index_07.jpg" alt="animation" name="Image17" width="244" height="77" border="0"></a></td>
+  </tr>
+	<tr>
+		<td colspan="4"><img src="images/index_08.jpg" width="406" height="80"><a href="javascript:addBookmark('Krister Viirsaar - 3D Artist','http://3dimensionalanimation.com')" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','images/images/User_09.jpg',1)"><img src="images/User_09.jpg" alt="bookmark" name="Image18" width="208" height="80" border="0"></a></td>
+  </tr>
+	<tr>
+		<td height="600" colspan="5" background="images/index_09.jpg"><table width="730" height="952" border="0" align="center">
+          <tr>
+            <td height="100" align="center"><span class="style1">News</span><span class="style2"> <br/><br/>
+            On this page you can find all my previous 3D work up until finishing University. Since then I've started my own 3D animation company and you can see up to date work on that site: 
+            <a target="_blank" href="http://www.täp.ee"> Täp.ee.</a> The company is based in <a target="_blank" href="http://en.wikipedia.org/wiki/Estonia"> Estonia </a> and the site is in Estonian.</span></td>
+          </tr>
+          <tr>
+            <td height="600"><p align="center" class="style1">&nbsp;</p>
+            <p class="style2">&nbsp;<p>&nbsp;</p>
+            
+            </p></td>
+          </tr>
+      </table></td>
+  </tr>
+	<tr>
+		<td height="2">
+			<img src="images/spacer.gif" width="165" height="1" alt=""></td>
+  <td>
+			<img src="images/spacer.gif" width="196" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="174" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="68" height="1" alt=""></td>
+		<td>
+			<img src="images/spacer.gif" width="176" height="1" alt=""></td>
+	</tr>
+</table>
+<!-- End ImageReady Slices -->
+</body>
+</html>
